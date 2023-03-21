@@ -10,12 +10,7 @@ const path =require('path');
 connection();
 
 // middlewares
-app.use(express.json());
-app.use(cors());
-app.use(express.static(path.join(__dirname,"./client/build")));
-app.get("*",function(req,res){
-    res.sendFile(path.join(__dirname,"./client/bulid/index.html"));
-});
+
 // routes
 
 
