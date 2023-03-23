@@ -23,5 +23,5 @@ const contentsRouter = require("./router/contents");
 app.use("/contents", contentsRouter);
 //app.use("/api/auth", authRoutes);
 
-const port = process.env.PORT || 1000;
+const port = process.env.PORT || 8080;
 app.listen(port, console.log(`Listening on port ${port}...`));
